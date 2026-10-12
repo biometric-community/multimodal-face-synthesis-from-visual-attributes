@@ -1,0 +1,36 @@
+paper:
+  slug: multimodal-face-synthesis-from-visual-attributes
+  title: "Multimodal Face Synthesis from Visual Attributes"
+data:
+  celeba_root: ../../datasets/celeba/extracted/celeba
+  max_train: null
+  max_val: 2000
+  max_test: 2000
+model:
+  # Paper grows to 256; we use 64 for single-GPU practicality (Dn)
+  image_size: 64
+  z_dim: 128
+  base_ch: 512
+  d_base_ch: 64
+  modalities: [visible, sketch]
+train:
+  protocol: full
+  # Paper: Adam lr=0.001, batch 16, long progressive iters; compact epoch schedule here
+  epochs: 20
+  batch_size: 16
+  lr: 0.001
+  lambda_rec: 10.0
+  lambda_cls: 1.0
+  seed: 42
+  num_workers: 4
+  log_every: 200
+  max_steps: null
+eval:
+  batch_size: 32
+  max_images: 2000
+paths:
+  checkpoint_dir: outputs/checkpoints/full
+  log_dir: outputs/logs
+  pred_dir: outputs/predictions/full
+  figure_dir: outputs/figures
+device: cuda

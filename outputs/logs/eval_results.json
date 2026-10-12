@@ -1,0 +1,8 @@
+{
+  "attr_l2": 0.18557489290833473,
+  "fid_proxy": 0.0608920156955719,
+  "n": 64,
+  "checkpoint": "outputs/checkpoints/smoke/best.pt",
+  "image_size": 64,
+  "note": "fid_proxy is channel-mean Frechet distance (not Inception FID); see DEVIATIONS.md"
+}
