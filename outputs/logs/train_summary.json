@@ -1,10 +1,10 @@
 {
-  "epoch": 0,
-  "g_loss": 8.749192863702774,
-  "d_loss": 3.417417235672474,
-  "protocol": "smoke",
-  "seconds": 1.3587455749511719,
-  "n_params_g_m": 0.622918,
+  "epoch": 19,
+  "g_loss": 110.9309123971171,
+  "d_loss": 21.321916429925945,
+  "protocol": "full",
+  "seconds": 8005.689952850342,
+  "n_params_g_m": 2.00295,
   "attr_dim": 12,
   "image_size": 64,
   "dataset": "celeba"

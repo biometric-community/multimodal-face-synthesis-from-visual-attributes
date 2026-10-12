@@ -6,10 +6,10 @@ Paper: Di & Patel, TBIOM 2021 (attribute → multimodal face synthesis).
 
 | Metric | Value |
 |--------|------:|
-| Protocol | smoke |
-| Epoch | 0 |
-| G loss | 8.7492 |
-| D loss | 3.4174 |
+| Protocol | full |
+| Epoch | 19 |
+| G loss | 110.9309 |
+| D loss | 21.3219 |
 | Image size | 64 |
 | Attr dim | 12 |
 
@@ -19,8 +19,8 @@ Paper: Di & Patel, TBIOM 2021 (attribute → multimodal face synthesis).
 
 | Metric | Value |
 |--------|------:|
-| Attr L2 | 0.1856 |
-| FID proxy | 0.061 |
-| N | 64 |
+| Attr L2 | 0.2823 |
+| FID proxy | 0.006 |
+| N | 2000 |
 
 Real CelebA faces only; sketch modality from pencil-sketch of RGB (see DEVIATIONS.md).
